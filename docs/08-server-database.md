@@ -1,0 +1,2 @@
+# 08 — Server Database
+Tables: users, assignments, inspections, photos, sync_operations and audit_logs. Role CHECK/validation permits only `admin_supervisor` and `field_staff`. Unique normalized email and operation ID. Foreign keys enforce assignment/user/inspection relations. Inspection version is monotonic. Photo bytes use protected persistent storage; metadata is stored in PostgreSQL. Schema creation is included for local MVP; production should use Alembic revisions and migration gates.

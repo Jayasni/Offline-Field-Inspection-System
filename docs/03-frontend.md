@@ -1,0 +1,2 @@
+# 03 — Frontend
+React + Vite + TypeScript, React Router, Fetch API and Dexie. Feature areas: auth, dashboard, users, assignments, inspections, photos and sync. Admin/Supervisor sees management/review pages; Field Staff sees own assignments and inspection form. Unknown roles fail closed. Save local-first and clearly show local/pending/synced/conflict. PWA shell caching excludes private API responses. Forms use accessible labels, keyboard focus and mobile-friendly controls.

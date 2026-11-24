@@ -1,0 +1,2 @@
+# 05 — Offline Sync
+Triggers: startup, login, reconnect, app focus and manual retry. `navigator.onLine` is a hint; call API health before sync. Outbox records use stable UUID, entity, payload, base version, attempts and state. Retry transient failures with backoff. Server idempotency prevents duplicate processing. Stale base version returns 409; preserve local draft/photos. Mark synced only after per-operation server acknowledgement.

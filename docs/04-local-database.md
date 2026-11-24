@@ -1,0 +1,2 @@
+# 04 — Local Database
+Dexie stores: cached assignments, inspection drafts, photo Blobs, outbox operations and sync metadata. Local save transaction stores inspection changes and outbox operation together. Photo Blobs persist before success is shown. Records are account-scoped. Handle quota errors and schema upgrades; do not purge pending data before acknowledgement. Browser storage is not a backup.

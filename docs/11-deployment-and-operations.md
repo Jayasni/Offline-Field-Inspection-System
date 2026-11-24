@@ -1,0 +1,2 @@
+# 11 — Deployment and Operations
+Local deployment uses Docker Compose with PostgreSQL, FastAPI and Vite. Change default passwords/secrets. Production requires HTTPS, hardened containers, pinned dependencies, persistent photo storage, DB backups/restore tests, Alembic migrations, strict CORS, logs/metrics and operational monitoring. IndexedDB is not a backup. Avoid logging tokens, passwords or image contents.

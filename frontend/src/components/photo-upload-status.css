@@ -1,0 +1,69 @@
+/* Inspection photo filenames and local upload status */
+.photo-upload-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 14px 0;
+  color: #20362f;
+  font-weight: 600;
+}
+
+.photo-upload-label input[type="file"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px dashed #8eaa98;
+  border-radius: 10px;
+  background: #f3f7f2;
+  color: #294438;
+}
+
+.inspection-photo-list {
+  margin: 12px 0 18px;
+  padding: 14px;
+  border: 1px solid #dfe8df;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.inspection-photo-list h4 {
+  margin: 0 0 10px;
+  color: #20362f;
+  font-size: 14px;
+}
+
+.inspection-photo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 0;
+  border-top: 1px solid #edf1ed;
+}
+
+.inspection-photo-name {
+  min-width: 0;
+  overflow: hidden;
+  color: #294438;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.photo-upload-status {
+  flex-shrink: 0;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.photo-upload-status.waiting {
+  color: #8a5a12;
+  background: #fff0d5;
+}
+
+.photo-upload-status.uploaded {
+  color: #17633b;
+  background: #d9f0df;
+}

@@ -1,0 +1,2 @@
+# 13 — Project Structure
+`frontend/src` contains app shell, components, feature modules (auth/users/assignments/inspections/photos/sync), Dexie database and API client. `backend/app` contains API routes, core config/security, DB, models, schemas, repositories, services, storage and tests. Root contains Docker Compose, environment example, README and docs. Add feature modules as complete tested units; do not create empty placeholders. Keep only `admin_supervisor` and `field_staff` role values.

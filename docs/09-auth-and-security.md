@@ -1,0 +1,2 @@
+# 09 — Authentication and Security
+Password hashing uses bcrypt. JWT access tokens are short-lived and refresh tokens are rotated and stored hashed. Canonical roles only: `admin_supervisor`, `field_staff`. Backend validates permissions and ownership; never trust client user IDs. CORS is allowlisted. Photo uploads enforce image MIME/size and use generated names. Production requires HTTPS, secret manager, rate limiting, backups, secure cookie/CSRF review if cookies are introduced, and external security review.

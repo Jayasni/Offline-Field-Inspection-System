@@ -1,0 +1,272 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f4f7fb;
+  color: #243247;
+}
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app-sidebar {
+  width: 260px;
+  min-width: 260px;
+  background: #ffffff;
+  border-right: 1px solid #e5eaf0;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 8px 28px;
+}
+
+.brand-icon {
+  background: #244c73;
+  color: white;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+}
+
+.sidebar-brand h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.sidebar-brand span {
+  font-size: 11px;
+  color: #8a96a7;
+}
+
+.sidebar-heading {
+  font-size: 11px;
+  color: #929eae;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  color: #657286;
+  cursor: pointer;
+  text-align: left;
+  font-size: 13px;
+}
+
+.sidebar-link:hover {
+  background: #f1f5fa;
+}
+
+.sidebar-link.active {
+  background: #e9f0f8;
+  color: #244c73;
+  font-weight: 700;
+}
+
+.sidebar-icon {
+  font-size: 19px;
+  width: 23px;
+  text-align: center;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+}
+
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 5px;
+  border-top: 1px solid #e9edf2;
+}
+
+.user-avatar,
+.header-avatar {
+  background: #dce8f5;
+  color: #244c73;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.sidebar-user strong {
+  display: block;
+  font-size: 12px;
+}
+
+.sidebar-user small {
+  color: #8a96a7;
+  font-size: 10px;
+}
+
+.logout-button {
+  border: none;
+  background: transparent;
+  color: #d14e4e;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.dashboard-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.top-header {
+  background: white;
+  padding: 20px 30px;
+  border-bottom: 1px solid #e5eaf0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-header h2 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.top-header p {
+  margin: 5px 0 0;
+  color: #8995a5;
+  font-size: 12px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.online-indicator {
+  color: #26976b;
+  font-size: 12px;
+}
+
+.dashboard-content {
+  padding: 28px;
+}
+
+.calendar-card {
+  max-width: 650px;
+  background: white;
+  border: 1px solid #e5eaf0;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.calendar-header h2 {
+  font-size: 18px;
+}
+
+.calendar-header button {
+  background: #edf3f9;
+  border: none;
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 23px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 7px;
+}
+
+.calendar-weekday {
+  text-align: center;
+  color: #8491a3;
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+.calendar-day {
+  min-height: 45px;
+  background: #f7f9fc;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.calendar-day:disabled {
+  background: transparent;
+  cursor: default;
+}
+
+.calendar-day:not(:disabled):hover,
+.calendar-day.selected {
+  background: #244c73;
+  color: white;
+}
+
+.calendar-selection {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+@media (max-width: 800px) {
+  .app-sidebar {
+    width: 75px;
+    min-width: 75px;
+    padding: 15px 8px;
+  }
+
+  .sidebar-brand h2,
+  .sidebar-brand span,
+  .sidebar-heading,
+  .sidebar-link span:last-child,
+  .sidebar-user,
+  .logout-button {
+    display: none;
+  }
+
+  .sidebar-link {
+    justify-content: center;
+  }
+
+  .dashboard-content {
+    padding: 15px;
+  }
+}
