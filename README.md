@@ -48,7 +48,7 @@ Browser storage is device-local, may be cleared by the browser and is not a serv
 Backend:
 ```bash
 cd backend
-python -m venv .venv
+python -m venv .venv 
 # Windows: .venv\Scripts\Activate.ps1
 # macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
